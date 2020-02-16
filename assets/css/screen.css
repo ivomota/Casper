@@ -113,8 +113,9 @@ body {
     position: relative;
     margin-top: 64px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    /* color: #fff; */
+    color: var(--darkgrey);
+    background: color(var(--white) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -127,7 +128,8 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    /* background: rgba(0,0,0,0.18); */
+    background: white;
 }
 
 .site-header-background:after {
@@ -253,7 +255,7 @@ body {
     }
 
     .site-home-header .site-description {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .site-archive-header .site-header-content {
@@ -271,7 +273,8 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: color(var(--darkgrey) l(-5%));
+    background: white;
+    /* background: color(var(--darkgrey) l(-5%)); */
 }
 
 .site-nav {
@@ -304,7 +307,8 @@ body {
 .site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after,
 .site-nav-main .site-nav-left-wrapper:after {
     right: 0;
-    background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
+    background: white;
+    /* background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%); */
 }
 
 .site-nav-left {
@@ -342,7 +346,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: inline-block;
     margin-right: 32px;
-    padding: 12px 0;
+    padding: 10px 0;
+    /* padding: 12px 0; */
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.8rem;
@@ -390,7 +395,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: block;
     padding: 12px 12px;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--darkgrey);
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
 }
@@ -407,7 +413,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     bottom: 8px;
     left: 12px;
     height: 1px;
-    background: #fff;
+    /* background: #fff; */
+    background: var(--darkgrey);;
     opacity: 0.25;
     transition: all 0.35s ease-in-out;
 }
@@ -427,7 +434,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     visibility: hidden;
     position: absolute;
     top: 9px;
-    color: #fff;
+    color: var(--darkgrey);;
+    /* color: #fff; */
     font-size: 1.7rem;
     font-weight: 400;
     text-transform: none;
@@ -496,7 +504,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: var(--darkgrey);
+    /* fill: #fff; */
 }
 
 .social-link-fb svg {
@@ -508,7 +517,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: var(--darkgrey);
+    /* stroke: #fff; */
 }
 
 .social-link-rss svg {
@@ -519,8 +529,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     padding: 4px 10px;
     margin: 0 0 0 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    /* border: #fff 1px solid;
+    color: #fff; */
+    border: var(--darkgrey) 1px solid;
+    color: var(--darkgrey);
     line-height: 1em;
     border-radius: 10px;
     opacity: 0.8;
@@ -547,7 +559,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: var(--darkgrey);;
+    /* fill: #fff; */
 }
 
 /* Special behaviors for home navigation */
@@ -563,6 +576,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .home-template .site-nav-main .fixed-nav-active {
     opacity: 1;
+    background: white;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.05s;
 }
 
@@ -2812,7 +2826,7 @@ Usage (In Ghost editor):
 
 /* 12. Dark Mode
 /* ---------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         color: rgba(255, 255, 255, 0.75);
         background: var(--darkmode);
@@ -3029,4 +3043,4 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
-}
+} */
